@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="res">resolve</button>
+    <script>
+        const mypromise=new Promise((resolve,rej)=>{
+            if(5<3){
+            
+            resolve("true")
+          }
+          else{
+            
+            reject("false")
+          }
+        })
+       
+       let promiseres= document.getElementById('res')
+         promiseres.addEventListener("click",()=>{
+        //  console.log( mypromise.then("resolve"))  
+         console.log(Promise.resolve("mypromise"))  
+        mypromise.then((result)=>{
+            console.log(result)
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+         })
+        
+    
+
+    </script>
+</body>
+</html>

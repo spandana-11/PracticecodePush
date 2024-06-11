@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(160, 154, 154);
+}
+.maindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.speaker {
+  background-color: grey;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+  width: 200px;
+  height: 200px;
+}
+.top_btn,
+.btm_btn {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+}
+.maindiv button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: grey;
+  box-shadow: -1px -2px 5px white, 1px 2px 3px black;
+  color: orange;
+  font-weight: 600;
+}
+.maindiv button:hover {
+  box-shadow: inset -1px -2px 3px white, inset 1px 2px 3px black;
+}
+
+.note {
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  top: 60px;
+  left: 120px;
+}
