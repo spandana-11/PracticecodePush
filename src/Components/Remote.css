@@ -3,19 +3,21 @@ body {
 }
 .remotecontrol {
   width: 280px;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: rgba(0, 0, 0, 0.973);
   box-shadow: -1px -2px 7px rgba(0, 0, 0, 0.826);
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom:15px ;
 }
 .powerbutton {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   /* padding: 0 15px; */
+  
   width: 90%;
 }
 .power img {
@@ -32,20 +34,18 @@ body {
   padding: 5px;
   border-radius: 50%;
 }
-.disTv{
+.disTv {
   margin: 15px 10px;
-  position:relative;
-
+  position: relative;
 }
-.ztelugu{
+.ztelugu {
   /* opacity: .4; */
   width: 95.5%;
   position: absolute;
- left: 6px;
- top: 2px;
- padding: 1px;
- scale: 1.01;
-  
+  left: 6px;
+  top: 2px;
+  padding: 1px;
+  scale: 1.01;
 }
 .homesec {
   width: 90%;
@@ -76,7 +76,7 @@ body {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
-  
+
   /* padding: 15px; */
 }
 
@@ -88,80 +88,141 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 50px;
-  height: 100px;
+  height: 120px;
   background-color: rgba(58, 57, 57, 0.469);
   border-radius: 30px;
   padding: 10px;
 }
-.keyboard ,.more{
-    padding: 5px;
-    height: 80px;
-     
+.keyboard,
+.more {
+  padding: 5px;
+  height: 80px;
 }
 
 .name {
   font-size: 8px;
 }
-.volumemenu .keyboard,.more{
-   width: 60px; 
-   text-align: center;
-   display: flex;
-   flex-direction: column;
- 
-   justify-content: center;
-   align-items: center;
- 
-   height: 80px;
-   background-color: rgba(58, 57, 57, 0.469);
-   border-radius: 30px;
-   padding: 10px;
-   
+.volumemenu .keyboard,
+.more {
+  width: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 80px;
+  background-color: rgba(58, 57, 57, 0.469);
+  border-radius: 30px;
+  padding: 10px;
 }
-.controllers{
+/* .controllers {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:140px;
-  height: 150px;
+  align-content: center;
+  width: 140px;
+  height: 140px;
   background-color: rgba(58, 57, 57, 0.469);
-  /* background-color: pink; */
 
-border-radius: 50%;
-  
+  padding: 15px;
+
+  border-radius: 50%;
 }
-.controllers .lr{
+.total {
   width: 100%;
   display: flex;
-  /* background-color: orange; */
-  
-  
-  justify-content:space-between;
+  flex-direction: column;
   align-items: center;
+  position: relative;
+  justify-content: center;
+  align-content: center;
 }
-.lr .ok{
+.lr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.tb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  position: absolute;
+  transform: rotate(90deg);
+}
+.tb .top,.bottom{
+  transform: rotate(-90deg);
+
+}
+.innercircle{
+  width: 60px;
+  height: 60px;
+  background-color: rgb(0, 0, 0);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+ */
+ .controllers{
+  margin-top: -35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  /* background-color: rgba(58, 57, 57, 0.469); */
-  
-  height: 40px;
+  width: 130px;
+  height: 130px;
+  background-color: rgb(129, 129, 118);
   border-radius: 50%;
-  /* text-align: center; */
-  font-size: 10px;
-  background-color: rgba(58, 57, 57, 0.469);
+  padding: 5px;
 
-  
-}
-.controllers .tb{
+
+ }
+ .total{
   display: flex;
-  
   flex-direction: column;
+  /* background-color: green; */
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  /* background-color: blueviolet; */
   position: relative;
-  right:56px;
-}
+  height: 100%;
+  align-content: center;
+ }
+ .total .lr{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  /* padding:0 10px; */
+  
+ }
+ .total .tb{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+position: absolute;
+  justify-content: space-between;
 
+ }
+ .innercircle{
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: black;
+border-radius: 50%;
+ }
+.total .pad {
+  /* background-color: rgb(0, 255, 34); */
+  padding:6px 12px;
+}
+ 
