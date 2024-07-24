@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Write a program that creates a new paragraph element and adds it to the page when the user
+clicks a button -->
+<div id="divele">
+
+</div>
+<button id="btn">create paragraph</button>
+
+<script>
+    let btn=document.getElementById('btn')
+    btn.addEventListener('click',()=>{
+    let div=document.getElementById("divele")
+let newparagraph=document.createElement("p");
+newparagraph.textContent="this is a new paragraph"
+div.appendChild(newparagraph)
+})
+</script>
+</body>
+</html>

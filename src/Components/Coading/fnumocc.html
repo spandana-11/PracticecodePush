@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function numocc(strname) {
+            let result = strname.split("").sort().join("")
+            console.log(result)
+            count = 1;
+            for (let i = 0; i < strname.length; i++) {
+                if (result[i] == result[i + 1]) {
+                    count++;
+
+                } else {
+                    console.log(result[i], count)
+                    count = 1;
+                }
+            }
+        }
+        numocc("panya")
+        //     39. Write a program that creates an array of numbers, and then uses the map method to create a
+        // new array with each number multiplied by 2. Print the new array to the c
+        let arr1 = [1, 2, 3, 4, 5];
+        let newarr = arr1.map((echnumb) => {
+            return echnumb * 2;
+        })
+        console.log(newarr)
+        // 38. Write a program that creates an array of objects representing cars, with properties for make,
+        //  model, and year. Add a method to each object that prints the make and model to the console.
+        let cars = [
+            benz = {
+                model: "newmodel",
+                makeyear: 2010,
+                name: "benz"
+            },
+            Audi = {
+                model: "newmodel",
+                makeyear: 2020,
+                name: "audi"
+            },
+        ]
+        cars.forEach((each) => {
+            console.log(each.makeyear, each.model)
+        })
+        // function printmakemodel(){
+        // for(key in cars){
+        //     console.log(cars[key].makeyear,cars[key].model)
+        // }
+        // }
+
+
+        // 37. Write a program that creates an object representing a car, with properties for make, model,
+        //  and year. Add a method to the object that prints the make and model
+        let benzz = {
+            model: "newmodel",
+            makeyear: 2010,
+            name: "benz"
+        }
+        console.log(benzz.makeyear, benzz.name)
+
+        // 36. Write a program that creates an array containing several numbers, and then sorts the array in
+        // alphabetical order. Print the sorted array to the console.
+        let arrnums = [10, 4, 7, 1, 5];
+        temp = "";
+        for (let i = 0; i < arrnums.length; i++) {
+            for (let j = i + 1; j < arrnums.length; j++) {
+                if (arrnums[i] > arrnums[j]) {
+                    temp = arrnums[i];
+                    arrnums[i]=arrnums[j];
+                    arrnums[j]=temp
+
+                }
+
+            }
+        }
+        console.log(arrnums)
+        
+
+
+    </script>
+</body>
+
+</html>

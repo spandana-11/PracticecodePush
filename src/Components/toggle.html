@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #colordiv {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="colordiv"></div>
+    <button id="btnn">toggle button</button>
+    
+    <script>
+        let flag=0;
+        let divele=document.getElementById("colordiv")
+        let btnele=document.getElementById("btnn")
+        btnele.addEventListener('click',()=>{
+            if(flag===0){
+            divele.style.backgroundColor="green"
+            flag=1;
+            }
+            else{
+            divele.style.backgroundColor="white"
+            flag=0;
+
+            }
+        })
+    </script>
+</body>
+
+</html>

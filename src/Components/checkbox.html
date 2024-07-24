@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <label for="name">username</label>
+        <input type="text" id="name"><br>
+        <label for="selgroup">select Group:</label><br>
+        <label for="mpc">MPC</label>
+       <input type="checkbox" name="mpc" id="mpc">
+       <label for="bipc">bipc</label>
+       <input type="checkbox" name="bipc" id="bipc">
+       <button onclick="handlecheckbox()">check all</button>
+    </form>
+    <script>
+       const handlecheckbox=()=>{
+        const checkboxes=document.querySelectorAll('input[type="checkbox"]')
+       checkboxes.forEach(checkbox=>{
+        checkbox.checked=true
+       })
+       }
+      
+    </script>
+</body>
+</html>

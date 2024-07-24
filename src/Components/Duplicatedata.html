@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name = [1, 5, 3, 5, 3];
+        let resname = "";
+        let count = 0;
+
+
+        function duplicate() {
+            for (let i = 0; i < name.length; i++) {
+                for (let j = i + 1; j < name.length; j++) {
+                    if (name[i] == name[j]) {
+
+                        console.log(name[i], count)
+                    }
+                }
+            }
+
+
+        }
+        duplicate()
+    </script>
+</body>
+
+</html>

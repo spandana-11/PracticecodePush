@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+   <form action="#" id="loginform">
+    <input type="text" id="uname" name="name" id="name" placeholder="UserName" ><br><br>
+    <input type="email" id="uemail" name="email" id="email" placeholder="Email" ><br><br>
+    <button type="submit">Login</button>
+   </form> 
+   <script>
+    document.getElementById("loginform").addEventListener('submit',(e)=>{
+e.preventDefault()
+// getting input values
+const uname=document.getElementById("uname").value;
+    const uemail=document.getElementById("uemail").value;
+    // store the input values in localstorage
+    localStorage.setItem('userName',uname)
+    localStorage.setItem('Email',uemail)
+    })
+    
+
+   </script>
+</body>
+</html>

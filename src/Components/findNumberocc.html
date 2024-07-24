@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countocc(name){
+            let result=name.split("").sort().join("");
+            console.log(result)
+            let counter=1;
+            for(let i=0;i<name.length;i++){
+                if(result[i]==result[i+1]){
+                    counter++;
+                }
+                else{
+                    console.log(result[i]+":"+ counter)
+                    counter=1;
+                }
+            }
+            
+
+        }
+        countocc("panyaisagoodgirl")
+    </script>
+
+    
+
+</body>
+</html>

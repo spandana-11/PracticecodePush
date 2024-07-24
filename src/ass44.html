@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program that changes the font size of a paragraph element on the page to 24px when
+the user hovers over it  -->
+<div>
+    <p id="para">please change when the user hovers over the paragraph</p>
+
+</div>
+
+    <script>
+        let para=document.getElementById("para")
+        para.addEventListener('mouseover',()=>{
+para.style.fontSize="24px"
+        })
+    </script>
+</body>
+</html>

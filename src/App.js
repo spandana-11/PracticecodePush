@@ -10,8 +10,14 @@ import FetchData from './Components/FetchData';
 import ExpenseTracker from './Components/ExpenseTracker';
 import Formprac from './Components/Formprac';
 import { Remote } from './Components/Remote';
+import Propsstate from './Components/Propsstate';
+import Asyawai from './Components/Asyawai';
 
 function App() {
+  const handleclick=()=>{
+    alert("hello")
+  }
+
   return (
    <div >
     {/* <Loancalc/> */}
@@ -22,8 +28,9 @@ function App() {
     {/* <FetchData/> */}
     {/* <ExpenseTracker/> */}
     {/* <Formprac/> */}
-    <Remote/>
-
+    {/* <Remote/> */}
+    {/* <Propsstate name="spandana" age={30} handleclick={()=>handleclick}/> */}
+<Asyawai/>
    </div>
   );
 }

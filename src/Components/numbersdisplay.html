@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for (let i = 0; i < arr1.length; i++) {
+            first = arr1[arr1.length - 1 - i]
+            second = arr1[i];
+            console.log(`${first} ${second}`)
+        }
+        let obj1 = {
+            name: "spandana",
+            email: "spandanaguntupalli@gmail",
+            mobile: 7207676566,
+
+
+        }
+
+
+        let obj2 = {
+            name1: "nadhiya",
+            email1: "nadhiyasudarshan@gmail",
+            mobile: 7207676566,
+
+
+        }
+
+        let result = {
+            ...obj1,
+            ...obj2
+        }
+        let arrres = []
+        arrres.push(obj1)
+        arrres.push(obj2)
+        console.log(arrres)
+    </script>
+</body>
+
+</html>

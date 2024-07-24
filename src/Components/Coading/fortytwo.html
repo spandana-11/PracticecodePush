@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#color{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+    </style>
+</head>
+<body>
+    <!-- 42. Write a program that changes the background color of a div element on the page to red when
+    the user clicks the button-->
+<div id="color">
+
+</div>
+<br>
+<button id="change">change background color</button>
+<script>
+    let change=document.getElementById("change");
+    change.addEventListener('click',()=>{
+        let divele=document.getElementById("color")
+
+        divele.style.backgroundColor='red'
+    })
+</script>
+</body>
+</html>

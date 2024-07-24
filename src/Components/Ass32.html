@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program that creates an array containing several numbers, and then prints the sum of
+all the numbers to the console. -->
+<script>
+    let numberarr=[2,1,2,5,3,1];
+    let sum=0;
+    for(let i=0;i<numberarr.length;i++){
+        sum+=numberarr[i]
+        // console.log(sum)
+    }
+    console.log(sum)
+    // Write a program that creates an array containing several numbers, and then sorts the array in
+// ascending order. Print the sorted array to the console.
+let severalnumbers=[9,7,4,1,2,10];
+let result=severalnumbers.sort((a,b)=>a-b)
+console.log(result)
+let severalstrings=["spa","pan","kal"]
+let res=severalstrings.sort()
+console.log(res)
+// . Write a program that creates an array of numbers, and then uses the map method to create a
+// new array with each number multiplied by 2. Print the new array to the cons
+let arrnumbers=[1,2,3,4,5]
+let resarr=arrnumbers.map((each)=>each*2)
+console.log(resarr)
+// Write a program that creates an array of objects representing people, with properties for
+// name, age, and gender. Use the filter method to create a new array containing only the people
+// who are over 30 years old. Print the new array to the console
+const people=[
+    {name:"spandana",age:"30",gender:"female"},
+    {name:"nadhiya",age:"32",gender:"female"},
+    {name:"arthy",age:"34",gender:"female"},
+
+]
+const peopleage30=people.filter((eachpeople)=>eachpeople.age>30)
+console.log(peopleage30)
+</script>
+
+</body>
+</html>

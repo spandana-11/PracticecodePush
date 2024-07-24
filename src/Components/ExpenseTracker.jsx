@@ -109,7 +109,7 @@ console.log(deldata)
 const saveTrans = (transactionsToSave) => {
   transactionsToSave.sort((a, b) => new Date(b.date) - new Date(a.date));
   localStorage.setItem("transactions", JSON.stringify(transactionsToSave));
-};
+}
   return (
     <>
    

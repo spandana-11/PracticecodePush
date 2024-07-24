@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Write a program that declares two variables, assigns them each
+        //  a number value, and then adds
+        // them together. Print the result to 
+        let a = 10;
+        let b = 20;
+        let sumresult = a + b
+        console.log(sumresult)
+        //  =======================================================================================================
+
+        //     Write a program that declares two variables, assigns them each a string value, 
+        // and then concatenates them together. Print the 
+        let var1 = "spandana"
+        let var2 = "panya"
+        let result = var1.concat(var2)
+        console.log(result)
+        // ========================================================================================================
+        // Write a program that declares a variable, assigns it a Boolean value, and then prints the
+        // opposite value to the console     
+        let x = true;
+        if (x) {
+            console.log(!x)
+        }
+        // ============================================================================================================
+        // 4. Write a program that declares a variable, assigns it an array value containing several strings, 
+        // and then prints the length of the array
+        let arr1 = ["spandana", "nadhiya", "anil", "shyam"]
+        console.log(`length of the array is:${arr1.length}`)
+        // =============================================================================================================
+        // 5. Write a program that declares a variable, assigns it an object value containing several key- value pairs,
+        //  and then prints one of the values to the console
+
+        let person = {
+            name: "spandana",
+            age: 30,
+            location: "hyderabad",
+            salary: "5 lakhs"
+        }
+        console.log(`person salary is: ${person.salary}`)
+        // ==============================================================================================================
+        // 6. Write a program that declares two variables, assigns them each a number value, and then
+        // compares them using the greater than operator. Print the result 
+        let firstvalue = 100;
+        let secondvalue = 200;
+        if (firstvalue > secondvalue) {
+            console.log(`first vaule is big ${firstvalue}`)
+        } else {
+            console.log(`second vaule is big ${secondvalue}`)
+
+
+        }
+        // =================================================================================================================
+        // 7. Write a program that declares a variable, assigns it a string value, and then checks if it
+        // contains a specific substring using the includes method. Print the result to the console.
+        let myname = "spandana panya";
+        console.log(`${myname.includes("panya")}`)
+        // ================================================================================================================
+        // 8. Write a program that declares a variable, assigns it a number value, and then increments it
+        // using the increment operator. Print the result to
+        let numbervalue = 100;
+        console.log(++numbervalue)
+        // =============================================================================================================
+        // 9. Write a program that declares a variable, assigns it an array value containing several numbers, 
+        // and then uses a loop to print each element of the array to the console.
+        let severalnumbers = [5, 10, 20, 12, 16, 1]
+        for (let i = 0; i < severalnumbers.length; i++) {
+            console.log(severalnumbers[i])
+        }
+        console.log(" 20 index is", severalnumbers.indexOf(20))
+        // ============================================================================================================
+        // 10. Write a program that declares a variable, assigns it an object value containing several key- value pairs,
+        //  and then uses a loop to print each key and value to the console
+        let car = {
+            model: "B M W",
+            make: 2020,
+            manufacturer: "grupo antolin ltd",
+            color: "red",
+
+        }
+        for (const key in car) {
+            console.log(key, ":", car[key])
+        }
+        // ==============================================================================================================
+        // 11. Write a program that prompts the user for a number, and then checks if it is even or odd. Print
+        // the result to the 
+
+        // let number=prompt("enter th number");
+        let number;
+        for (let i = 1; i < number; i++) {
+
+            if (number % i == 0) {
+                console.log(`given number is even:${number}`)
+            }
+        }
+        // ==============================================================================================================
+        // 12. Write a program that prompts the user for a number, and then checks if it is positive or
+        // negative. Print the result to the cons
+        let num = 13;
+        if (num > 0) {
+            console.log(`the given number is greater than 0:${num}`)
+        }
+        // =========================================================================================================
+        // 13. Write a program that prompts the user for a string, 
+        // and then checks if it contains the letter "a". Print the result 
+        let string3 = "spandana";
+        console.log(string3.includes('a'))
+        // ===========================================================================================================
+        // 14. Write a program that prompts the user for a number, and then prints all the even numbers up
+        // to that number to the console.
+        function findeven() {
+            let tillnumber = 20;
+            for (let j = 1; j <= tillnumber; j++) {
+
+                if (j % 2 == 0) {
+                    console.log("even numbers are", j);
+                }
+            }
+        }
+        findeven()
+        // ======================================================================================================
+        //         Write a program that prompts the user for a number, and then prints all the odd numbers up
+        // to that number 
+        function oddnumbers() {
+            let tnumber = 20;
+            console.log("the odd numbers are")
+            for (let i = 0; i <= tnumber; i++) {
+                if (i % 2 == 1) {
+                    console.log(i)
+
+                }
+            }
+        }
+        oddnumbers()
+        //   ===============================================================================================================
+        //     16. Write a program that prompts the user for a number, and then prints the factorial of that
+        // number to the
+        let factnumber = 5;
+        fact = 1;
+        for (let i = 1; i <= factnumber; i++) {
+            fact = fact * i;
+        }
+        console.log(`factorial of a 5 is ${fact}`)
+        // ===================================================================================================================
+        // 17.check the given number is prime or not
+
+        function prime(num) {
+            count = 0;
+            for (let i = 1; i <= num; i++) {
+                if (num % i == 0) {
+                    count++;
+                    // console.log(count)
+                }
+            }
+
+
+
+            if (count == 2) {
+                console.log("the given number is prime", num)
+            } else {
+                console.log("the given number is not prime")
+            }
+
+        }
+        prime(2)
+        //  ===========================================================================================================
+        // Write a program that prompts the user for a number, and then prints the Fibonacci sequence
+        // up to that number to
+        function fibn(num) {
+    let a = 0;
+    let b = 1;
+    let c;
+
+    console.log(a); // Print the first Fibonacci number
+    console.log(b); // Print the second Fibonacci number
+
+    for (let i = 1; i <= num; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+        console.log(a); // Print the next Fibonacci number
+    }
+}
+
+// Call the function with the desired number of Fibonacci numbers
+fibn(10); // This will print the first 10 Fibonacci numbers
+// ===========================================================================================================
+// 19. Write a program that prompts the user for a string, and then prints each character of the
+// string to the console 
+
+let placestring="hyderabad"
+for(let i=0;i<placestring.length;i++){
+    console.log(placestring[i])
+}
+    
+// 20. Write a program that prompts the user for a number, and then prints a multiplication table for
+// that number up to 10 to the console.
+for(let i=1;i<=10;i++){
+     tilltablenumber=10;
+    console.log(tilltablenumber+"*"+i+"="+tilltablenumber*i)
+}
+
+    
+    </script>
+
+</body>
+
+</html>

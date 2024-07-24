@@ -57,7 +57,7 @@ setTimeout(()=>{
   const volumedecrement = () => {
 setVollume(true)
 
-    setAudio((prevVolume) => Math.max(prevVolume - 0.1, 0));
+    setAudio((prevVolume) => Math.max(prevVolume - 0.1,0));
     setTimeout(()=>{
       setVollume(false)
     },3000)

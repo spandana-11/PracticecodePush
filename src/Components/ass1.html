@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Write a program that declares two variables, assigns them each a number value, and then adds
+        // them together. Print the result to
+
+        const adding = (a, b) => {
+            return a + b
+        }
+        console.log(adding(2, 4))
+        //    Write a program that declares two variables, assigns them each a string value, and then
+        // concatenates them together. Print the result to the console
+        let name1="spandana";
+        let name2="kalyan";
+        let name3=name1.concat(name2)
+        console.log(name3)
+//         Write a program that declares a variable, assigns it a Boolean value, and then prints the
+// opposite value to the console
+let value1=true;
+let value2=false;
+if(value1){
+    console.log(!value1)
+}
+if(!value2){
+    console.log(!value2)
+}
+// Write a program that declares a variable, 
+// assigns it an array value containing several strings,
+//  and then prints the length of the array to the console
+let arrstrings=["span","nad","ani"];
+console.log(arrstrings)
+// Write a program that declares a variable, 
+// assigns it an object value containing several key- value pairs, 
+// and then prints one of the values 
+let animal={dogs:"barking",cats:"mew mew",horses:"knee knee"};
+console.log(animal.dogs)
+
+
+
+for (let key in animal) {
+    console.log(key + ":" +animal[key])
+}
+// Write a program that declares a variable, assigns it a string value, and then checks if it
+// contains a specific substring using the includes method. Print the result to the console
+let studentname="kananka valli";
+console.log(studentname.includes("valli"))
+// Write a program that prompts the user for a number, and then checks if it is even or odd. Print
+// the 
+// let numbervalue =prompt("enter the number");
+let numbervalue=10;
+if(numbervalue%2==0){
+    console.log("the given number is even number",numbervalue)
+}
+else{
+    console.log("not a even number")
+}
+// Write a program that prompts the user for a string, and then checks 
+// if it contains the letter "a". Print the result to 
+let strvalue="spandana";
+console.log(strvalue.includes("a"))
+// given number is positive or negative
+let numvalue=10;
+if(numvalue>0){
+    console.log("the given num is positive")
+}
+else{
+    console.log("the given num is negative")
+
+}
+// Write a program that prompts the user for a number, and then prints all the even numbers up
+// to that number 
+
+let tillnumber=20;
+for(let k=0;k<=tillnumber;k++){
+if(k%2==0){
+console.log(k)
+}
+}
+// primenumbers
+let tillprimenums=10;
+
+for(let p=1;p<=tillprimenums;p++){
+    count=0;
+    for(let q=1;q<=p;q++){
+        if(p%q==0){
+count++
+        }
+    }
+    if(count==2){
+        console.log(p,"prime number")
+    }
+    
+    
+}
+    </script>
+</body>
+
+</html>

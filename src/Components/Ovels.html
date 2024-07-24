@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function noofovels() {
+            let ovelsstring = 'spandana';
+            let count = 0;
+
+            for (let i = 0; i < ovelsstring.length; i++) {
+                if (
+                    ovelsstring.charAt(i) == 'a' ||
+                    ovelsstring.charAt(i) == 'e' ||
+                    ovelsstring.charAt(i) == 'i' ||
+                    ovelsstring.charAt(i) == 'o' ||
+                    ovelsstring.charAt(i) == 'u'
+                ) 
+                {
+                    count++;
+                }
+            }
+            console.log("the number of stings in the given stirng" + count)
+
+        }
+        noofovels()
+    </script>
+</body>
+
+</html>

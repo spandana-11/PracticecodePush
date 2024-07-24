@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 21. Write a function that takes two numbers as parameters and returns their sum
+        function sum(a, b) {
+            return a + b;
+        }
+        console.log(sum(10, 20))
+
+        //  22. Write a function that takes two strings as parameters and concatenates them together. Return
+        // the result
+        function concatination(st1, st2) {
+            return st1.concat(st2)
+        }
+        console.log(concatination("panya", "kalyan"))
+        // =====================================================================================================
+        // 23. Write a function that takes a number as a parameter and returns true if it is even, and false
+        // otherwise
+        function evenornot(num) {
+
+            if (num % 2 == 0)
+                return true;
+
+
+            else
+                return false;
+
+
+
+        }
+        console.log(evenornot(1))
+        // =================================================================================================
+        // 24. Write a function that takes a number as a parameter and returns true if it is a prime number, 
+        // and false otherwise
+        function primeornot(num) {
+            count = 0;
+            for (let i = 1; i <= num; i++) {
+                if (num % i == 0) {
+                    count++;
+                }
+
+            }
+            if (count == 2) {
+                return true
+            } else {
+                return false
+            }
+
+        }
+        console.log(primeornot(5))
+        //    ================================================================================================
+        //        25. Write a function that takes an array of numbers as a parameter and returns the largest
+        // number 
+        function largestt(arrnum) {
+
+
+            let largest = arrnum[0];
+            for (let i = 0; i <= arrnum.length; i++) {
+
+                if (largest < arrnum[i]) {
+                    largest = arrnum[i];
+
+                    // console.log(`largest is ${smallest}`)
+                    return largest
+                }
+            }
+
+        }
+        let numbers = [9, 7, 3, 1, 15, 6];
+        console.log(largestt(numbers))
+        // =============================================================================================
+        //         26. Write a function that takes an array of strings as a parameter and returns the longest string in
+        // the array.
+        function longeststring(arrstrings) {
+            let longestr = arrstrings[0];
+            for (let i = 0; i <= arrstrings.length; i++) {
+                if (longestr.length < arrstrings[i].length) {
+                    longestr = arrstrings[i];
+                    return longestr;
+                }
+            }
+
+        }
+        let strins = ["spandana", "nadhiya", "shyam", "anil", "anilkumarsai"]
+        console.log(longeststring(strins))
+        // =================================================================================================================
+        // 27. Write a function that takes a string as a parameter and returns a new string with all the vowels
+        // removed.
+        function removevowels(withovels) {
+            let newstr = "";
+            for (let i = 0; i < withovels.length; i++) {
+                if (withovels[i] != 'a' &&
+                    withovels[i] != 'e' &&
+                    withovels[i] != 'i' &&
+                    withovels[i] != 'o' &&
+                    withovels[i] != 'u'
+
+                ) 
+                {
+
+                 newstr += withovels[i]
+                }
+                
+            }
+            return newstr
+
+        }
+
+        console.log(removevowels("spandana"))
+    </script>
+</body>
+
+</html>

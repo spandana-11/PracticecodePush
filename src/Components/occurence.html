@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function numberofoccurrence(stringvalue) {
+            let newsresultstring = {};
+            for (let i = 0; i < stringvalue.length; i++) {
+                let letter = stringvalue[i];
+                if (newsresultstring[letter]) {
+                    newsresultstring[letter]++;
+                } else {
+                    newsresultstring[letter] = 1;
+                }
+            }
+            return newsresultstring;
+
+        }
+        let name = "hyderabad"
+        newsresultstring = numberofoccurrence(name);
+        console.log(newsresultstring)
+        //         function countEachLetterOccurrences(mainString) {
+        //   const letterCounts = {};
+
+        //   for (let i = 0; i < mainString.length; i++) {
+        //     const letter = mainString[i];
+        //     if (letterCounts[letter]) {
+        //       letterCounts[letter]++;
+        //     } else {
+        //       letterCounts[letter] = 1;
+        //     }
+        //   }
+
+        //   return letterCounts;
+        // }
+
+        // Example usage
+        // let string = "hyderabad";
+
+        // let letterCounts = countEachLetterOccurrences(string);
+        // console.log(letterCounts); // Output: { h: 1, y: 1, d: 2, e: 1, r: 1, a: 2, b: 1 }
+    </script>
+</body>
+
+</html>

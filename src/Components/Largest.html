@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function largest(){
+      let statement="i love my daughter";
+      let splitsta=statement.split(" ")
+      console.log(splitsta)
+     let largeststr=splitsta[0];
+      for(let i=0;i<splitsta.length;i++){
+if(splitsta[i].length>largeststr.length){
+    largeststr=splitsta[i]
+}
+}
+console.log(largeststr)
+        }
+        largest()
+    </script>
+</body>
+</html>

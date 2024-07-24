@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = 10;
+        let a = 0;
+        let b = 1;
+        let c;
+
+        console.log(a); // Print the first Fibonacci number
+        console.log(b); // Print the second Fibonacci number
+
+        for (let i = 2; i < number; i++) {
+            c = a + b;
+            console.log(c); // Print the next Fibonacci number
+            a = b;
+            b = c;
+        }
+
+        // Write a function that takes a number as
+        //  a parameter and returns true if it is even, and f
+        function even(x){
+           if(x%2==0){
+            return true;
+           }
+           else{
+            return false;
+           }
+        }
+       console.log(even(3)) 
+       let numbersArray=[5,18,20,10,2];
+       function largestnumber(){
+       largest=numbersArray[0];
+       for(let i=0;i<numbersArray.length;i++){
+        if(largest<numbersArray[i]){
+            largest=numbersArray[i]
+        }
+       }
+       console.log(largest, "is largest number")
+       }
+       largestnumber()
+    //    1. Write a program that creates an array containing several 
+    // strings, and then prints each string to
+// the console
+let severalstrings=["panya","spandana","kalyan","rajyam"];
+for (const i of severalstrings) {
+    console.log(i)
+}
+// Write a function that takes a string as a parameter and returns a new string with all the vowels
+// removed.
+function removeOvels(namestirng){
+    let afterRemovingOvels="";
+for(let i=0;i<namestirng;i++){
+    if(namestirng.charAt(i)=='a'||namestirng.charAt(i)=='e'||namestirng.charAt(i)=='i'){
+    afterRemovingOvels+=namestirng[i];
+    }
+}
+// console.log(afterRemovingOvels)
+return afterRemovingOvels;
+}
+console.log(removeOvels("spandana"));
+
+    </script>
+</body>
+</html>

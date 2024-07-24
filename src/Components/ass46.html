@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="imgdiv"></div>
+    <button id="btn">create image element</button>
+    <!-- Write a program that creates a new image element and sets its source to a specified URL when
+the user clicks a button. -->
+   <script>
+       let btn=document.getElementById("btn")
+       btn.addEventListener('click',()=>{
+    let imgdiv=document.getElementById("imgdiv")
+    let img=document.createElement("img")
+    img.src=""
+    img.alt="image"
+    imgdiv.appendChild(img)
+
+})
+   </script> 
+</body>
+</html>

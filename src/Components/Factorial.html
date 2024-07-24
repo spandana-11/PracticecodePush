@@ -6,17 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>&lt;</h1>
     <script>
-        async function fetchdata(){
-            try{
-                const data="async and await practice"
-const response=await(data);
+        let fact=1;
+        const factorial=(x)=>{
+            for(let i=1;i<=x;i++){
+             fact=fact*i;
             }
-            catch(error){
-console.log("error occured",error.message)
-            }
+           console.log(fact)
+            
         }
+        factorial(5)
+        
     </script>
 </body>
 </html>
